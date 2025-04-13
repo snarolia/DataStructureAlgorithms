@@ -27,7 +27,7 @@ Step 3:
 class Node:
     def __init__(self, data):
         self.data = data
-        logging.info(f"Node created with value :  {data}")
+        #logging.info(f"Node created with value :  {data}")
         self.next = None
 
 class LinkedList:
@@ -74,13 +74,16 @@ class LinkedList:
     def printList(self):
         current=self.head
         while current:
-            print(current.data)
+            print(current.data, end='-->')
             current=current.next
         print("None")
 
-l1 = LinkedList()
-for _ in range(5):
-    l1.appendEnd(_)
-l1.appendStart("Appended at Beignning")
-l1.appendAfter(2,"Appended in between")
-l1.printList()
+# l1 = LinkedList()
+# for _ in range(5):
+#     l1.appendEnd(_)
+# l1.appendStart("Appended at Beignning")
+# l1.appendAfter(2,"Appended in between")
+# print('Printing head')
+# print(l1.head.data)
+# print('above is head')
+# l1.printList()
